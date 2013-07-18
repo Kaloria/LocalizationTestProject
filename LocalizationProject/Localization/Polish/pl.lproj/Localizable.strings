@@ -1,0 +1,17 @@
+/* 
+  Polish.strings
+  LocalizationProject
+
+  Created by Ewa Zebrowska on 18.07.2013.
+  Copyright (c) 2013 Ewa Żebrowska. All rights reserved.
+*/
+
+
+"MAIN_VIEW" = "Widok główny";
+"NAVIGATION_TITLE" = "Lokalizacja";
+"PLEASE_WAIT_UNTIL_LOCATION_IS_LOADING" = "Proszę, poczekaj na załadowanie się lokalizacji.";
+"DATA_LOADED" = "Dystance pomiędzy punktami wynosi %@ km w lini prostej i wyznacza go czerwona linia.";
+
+"ERROR" = "Błąd";
+"ERROR_MESSAGE" = "Nastąpił błąd, proszę spróbować później";
+"OK" = "OK";

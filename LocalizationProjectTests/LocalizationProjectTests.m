@@ -2,7 +2,7 @@
 //  LocalizationProjectTests.m
 //  LocalizationProjectTests
 //
-//  Created by Ewa Zebrowska on 17.07.2013.
+//  Created by Ewa Zebrowska on 18.07.2013.
 //  Copyright (c) 2013 Ewa Żebrowska. All rights reserved.
 //
 
