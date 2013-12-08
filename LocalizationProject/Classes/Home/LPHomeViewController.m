@@ -28,6 +28,7 @@
         [self setUpLocationManagerAndMapView];
         [self dropPinAtCurrentPosition];
         [self loadLocation];
+        
         self.view.userInteractionEnabled = NO;
     }
     return self;
@@ -86,40 +87,11 @@
                                               cancelButtonTitle:NSLocalizedString(@"OK", nil)
                                               otherButtonTitles:nil, nil];
         [alert show];
+        self.view.userInteractionEnabled = YES;
         RKLogError(@"Operation failed with error: %@", error);
     }];
     
     [objectRequestOperation start];
-}
-
-#pragma mark - MKAnnotation delegate methods
-
-/*
- Change view of the pin cloud
- */
-- (MKAnnotationView *)mapView:(MKMapView *)mapViewTmp viewForAnnotation:(id<MKAnnotation>)annotation {
-    if(annotation == self.homeView.mapView.userLocation)
-        return nil;
-    
-    MKPinAnnotationView *pinView = (MKPinAnnotationView*)[mapViewTmp dequeueReusableAnnotationViewWithIdentifier:@"Pin"];
-    if (pinView == nil && self.imageUrlString != nil) {
-        pinView = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"Pin"];
-        
-        NSURL *url = [NSURL URLWithString:self.imageUrlString];
-        NSData *data = [NSData dataWithContentsOfURL:url];
-        UIImage *img = [[UIImage alloc] initWithData:data];
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
-        imageView.frame = [pinView bounds];
-        
-        pinView.rightCalloutAccessoryView = imageView;
-        pinView.enabled = YES;
-        pinView.centerOffset = CGPointMake(0,-15);
-        pinView.calloutOffset = CGPointMake(-8,0);
-        pinView.canShowCallout = YES;
-        
-        pinView.animatesDrop = YES;
-    }
-    return pinView;
 }
 
 #pragma mark - Draw pin and route methods

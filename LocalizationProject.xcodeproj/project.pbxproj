@@ -33,7 +33,8 @@
 		9961D87617971B52009B6C1D /* LPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9961D87517971B52009B6C1D /* LPBaseViewController.m */; };
 		9961D87A17971CD7009B6C1D /* LPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9961D87917971CD7009B6C1D /* LPMainViewController.m */; };
 		9961D880179725D1009B6C1D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9961D87F179725D1009B6C1D /* MapKit.framework */; };
-		99DEA8F6179804A100CCAD5B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9961D870179718BF009B6C1D /* Localizable.strings */; };
+		F25D5D3D18550FE8006880DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F25D5D3B18550FE8006880DB /* Localizable.strings */; };
+		F25D5D4118551015006880DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F25D5D3F18551015006880DB /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,7 +114,6 @@
 		9961D863179715AF009B6C1D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9961D865179715BD009B6C1D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9961D867179715C6009B6C1D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		9961D871179718BF009B6C1D /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9961D87417971B52009B6C1D /* LPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPBaseViewController.h; sourceTree = "<group>"; };
 		9961D87517971B52009B6C1D /* LPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPBaseViewController.m; sourceTree = "<group>"; };
 		9961D87817971CD7009B6C1D /* LPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPMainViewController.h; sourceTree = "<group>"; };
@@ -121,6 +121,9 @@
 		9961D87F179725D1009B6C1D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9961D88517972BEA009B6C1D /* LPHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHomeView.h; sourceTree = "<group>"; };
 		9961D88817972C2A009B6C1D /* LPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHomeViewController.h; sourceTree = "<group>"; };
+		F25D5D0018550AE0006880DB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F25D5D3C18550FE8006880DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F25D5D4018551015006880DB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,7 @@
 		9961D7DC1797122F009B6C1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F25D5D0018550AE0006880DB /* SenTestingKit.framework */,
 				992319A6179817F9008F5468 /* CoreLocation.framework */,
 				9961D87F179725D1009B6C1D /* MapKit.framework */,
 				9961D867179715C6009B6C1D /* SystemConfiguration.framework */,
@@ -287,17 +291,10 @@
 		9961D869179717EF009B6C1D /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				9961D86A179717EF009B6C1D /* Polish */,
+				F25D5D3E18551015006880DB /* Polish */,
+				F25D5D3A18550FE8006880DB /* English */,
 			);
 			path = Localization;
-			sourceTree = "<group>";
-		};
-		9961D86A179717EF009B6C1D /* Polish */ = {
-			isa = PBXGroup;
-			children = (
-				9961D870179718BF009B6C1D /* Localizable.strings */,
-			);
-			path = Polish;
 			sourceTree = "<group>";
 		};
 		9961D87217971B34009B6C1D /* Classes */ = {
@@ -337,6 +334,22 @@
 				992319A0179805A6008F5468 /* LPHomeViewController.m */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		F25D5D3A18550FE8006880DB /* English */ = {
+			isa = PBXGroup;
+			children = (
+				F25D5D3B18550FE8006880DB /* Localizable.strings */,
+			);
+			path = English;
+			sourceTree = "<group>";
+		};
+		F25D5D3E18551015006880DB /* Polish */ = {
+			isa = PBXGroup;
+			children = (
+				F25D5D3F18551015006880DB /* Localizable.strings */,
+			);
+			path = Polish;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,8 +468,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9961D7F01797122F009B6C1D /* Images.xcassets in Resources */,
+				F25D5D4118551015006880DB /* Localizable.strings in Resources */,
+				F25D5D3D18550FE8006880DB /* Localizable.strings in Resources */,
 				9910DD2B179724A300CD92B9 /* Default-568h@2x.png in Resources */,
-				99DEA8F6179804A100CCAD5B /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,10 +524,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9961D870179718BF009B6C1D /* Localizable.strings */ = {
+		F25D5D3B18550FE8006880DB /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9961D871179718BF009B6C1D /* pl */,
+				F25D5D3C18550FE8006880DB /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F25D5D3F18551015006880DB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25D5D4018551015006880DB /* pl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -596,11 +618,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalizationProject/LocalizationProject-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "LocalizationProject/LocalizationProject-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -615,11 +641,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalizationProject/LocalizationProject-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "LocalizationProject/LocalizationProject-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",

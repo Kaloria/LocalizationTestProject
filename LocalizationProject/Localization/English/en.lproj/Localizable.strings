@@ -1,0 +1,17 @@
+/* 
+  Polish.strings
+  LocalizationProject
+
+  Created by Ewa Zebrowska on 18.07.2013.
+  Copyright (c) 2013 Ewa Żebrowska. All rights reserved.
+*/
+
+
+"MAIN_VIEW" = "Home view";
+"NAVIGATION_TITLE" = "Location";
+"PLEASE_WAIT_UNTIL_LOCATION_IS_LOADING" = "Please wait for the the location.";
+"DATA_LOADED" = "Distance between points is %@ kilometers in a straight line and it sets the yellows line.";
+
+"ERROR" = "Error";
+"ERROR_MESSAGE" = "Api connection problem. Please try again later";
+"OK" = "OK";
